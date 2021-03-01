@@ -1,7 +1,13 @@
 import NavBarComponent from '../components/navBar';
+import MyInss from '../components/myInss';
 
 function Home() {
-  return <NavBarComponent/>;
+  return (
+    <main>
+      <NavBarComponent />
+      <MyInss />
+    </main>
+  );
 }
 
 export default Home;

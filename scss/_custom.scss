@@ -1,36 +1,56 @@
+$font-family: Arial, Helvetica, sans-serif;
+$white: #fff;
 $bg-color: #fff;
 $theme-colors: (
-  "primary": #071d41,
+  'primary': #071d41,
 );
 
-@import "~bootstrap/scss/bootstrap";
+%title{
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.8;
+}
 
-.navbar-toggler{
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-toggler {
   outline: none;
   border: none;
 }
 
-#navbar .navbar-toggler-icon{
+#navbar .navbar-toggler-icon {
   background-image: url('/images/menu.svg');
 }
 
-#navbar .navbar-activated{
+#navbar .navbar-activated {
   background-image: url('/images/close.svg');
 }
 
-.navbar-light .navbar-nav .nav-link{
-  font-family: Arial, Helvetica, sans-serif;
+.navbar-light .navbar-nav .nav-link {
+  font-family: $font-family;
   color: #fff;
   border-bottom: 2px solid rgba($color: #fff, $alpha: 0.01);
   font-size: 16px;
 
-  &:hover{
+  &:hover {
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-family;
     color: #fff;
-    border-bottom: 2px solid rgba($color: #fff, $alpha: 1.0);
+    border-bottom: 2px solid rgba($color: #fff, $alpha: 1);
   }
 }
 
+.text{
+  @extend %title;
+  color: $dark;
+}
 
+.btn{
+  @extend %title;
+  color: $white;
+  &:hover{
+    opacity: 0.8;
+  }
+}
 
