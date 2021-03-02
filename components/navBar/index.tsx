@@ -1,4 +1,4 @@
-import { Navbar, Container, Row, Nav } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect } from 'react';
@@ -23,16 +23,32 @@ function NavBarComponent() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="">Agendamentos/Solicitações</Nav.Link>
-            <Nav.Link href="">Perícia</Nav.Link>
-            <Nav.Link href="">Guias de Pagamentos(GPS)</Nav.Link>
-            <Nav.Link href="">Acidente de Trabalho (CAT)</Nav.Link>
-            <Nav.Link href="">Calendário de Pagamento</Nav.Link>
-            <Nav.Link href="">Encontre uma agência</Nav.Link>
-            <Nav.Link href="">Autencidade de Documentos.</Nav.Link>
+            <Link href="">
+              <a>Agendamentos/Solicitações</a>
+            </Link>
+            <Link href="">
+              <a>Perícia</a>
+            </Link>
+            <Link href="">
+              <a>Guias de Pagamentos(GPS)</a>
+            </Link>
+            <Link href="">
+              <a>Acidente de Trabalho (CAT)</a>
+            </Link>
+            <Link href="">
+              <a>Calendário de Pagamento</a>
+            </Link>
+            <Link href="">
+              <a>Encontre uma agência</a>
+            </Link>
+            <Link href="">
+              <a>Autencidade de Documentos</a>
+            </Link>
           </Nav>
           <Nav>
-            <Nav.Link href="">Agências Abertas Covid-19</Nav.Link>
+            <Link href="">
+              <a>Agências Abertas Covid-19</a>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

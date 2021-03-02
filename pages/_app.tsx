@@ -1,4 +1,5 @@
 import '../scss/main.scss';
+import '../scss/reset.scss';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

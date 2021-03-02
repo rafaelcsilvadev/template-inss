@@ -5,10 +5,17 @@ $theme-colors: (
   'primary': #071d41,
 );
 
-%title{
+%title {
   font-family: $font-family;
   font-size: 20px;
   font-weight: 700;
+  line-height: 1.8;
+}
+
+%text {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1.8;
 }
 
@@ -27,7 +34,8 @@ $theme-colors: (
   background-image: url('/images/close.svg');
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav a{
+  padding: 10px;
   font-family: $font-family;
   color: #fff;
   border-bottom: 2px solid rgba($color: #fff, $alpha: 0.01);
@@ -41,16 +49,45 @@ $theme-colors: (
   }
 }
 
-.text{
+.title {
   @extend %title;
   color: $dark;
 }
 
-.btn{
+.title2 {
   @extend %title;
   color: $white;
-  &:hover{
+}
+
+.text {
+  @extend %text;
+  color: $white;
+}
+
+.btn {
+  @extend %title;
+  color: $white;
+  
+  &:hover {
     opacity: 0.8;
+  }
+}
+
+.footer {
+  margin-top: 50px;
+
+  @media screen and (min-height: 900px) {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.footer a {
+  &:hover {
+    color: $white;
+    text-decoration:underline;
   }
 }
 
