@@ -11,7 +11,7 @@
 
 <h2 id='objective'>Objetivo</h2>
 <p>
-    Site feito para praticar Nex.js, Bootstrap, Sass e TypeScript.
+    Site feito para praticar Next.js, Bootstrap, Sass e TypeScript.
 </p>
 
 <h2 id='technologies'>
