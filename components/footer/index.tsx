@@ -14,7 +14,6 @@ interface Props {
 
 function LinksFooter(props: Props) {
   const array = props.link;
-  console.log(array);
   return (
     <div className="d-flex flex-column col-12 mt-4 col-md-5 mt-0 col-lg-3">
       <h6 className="title2">{props.title}</h6>
